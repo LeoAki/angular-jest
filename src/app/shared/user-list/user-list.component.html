@@ -1,0 +1,12 @@
+<h2>Listado de usuarios</h2>
+<section class="main-users">
+  @if (users$ | async; as usersList) {
+    @for (item of usersList.users; track $index) {
+      @defer (when item) {
+        <article class="main-users-article">
+          <app-user-item [dataUser]="item"></app-user-item>
+        </article>
+      }
+    }
+  }
+</section>

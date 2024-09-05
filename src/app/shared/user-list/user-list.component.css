@@ -1,0 +1,13 @@
+.main-users {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.main-users-article {
+  background-color: #b0c4de;
+  padding: 20px;
+  /* text-align: center; */
+  border: 1px solid #ccc;
+}
